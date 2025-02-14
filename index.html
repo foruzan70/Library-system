@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>سیستم کتابداری</title>
+    <link rel="stylesheet" href="src/main.css" />
+</head>
+
+<body>
+
+    <main>
+        <section id="library-box-section">
+            <div id="library-box">
+                <img src="src/images/logot.png" width="140px" />
+                <br />
+                <div class="input-item">
+                    <label>نام کتاب یا کد کتاب</label>
+                    <br />
+                    <input type="text" id="book-name" />
+                    <br />
+                    <span class="info">جهت ثبت، نام کتاب را وارد نمایید و برای حذف، کد کتاب را وارد نمایید</span>
+                    <br />
+                    <input onclick="addBook()" type="button" class="btn btn-submit" value="ثبت کتاب" />
+                    <input onclick="deleteBook()" type="button" class="btn btn-delete" value="حذف کتاب" />
+                </div>
+
+            </div>
+        </section>
+        <section id="library-table-section">
+            <div id="library-table-box">
+                <table id="result-table">
+                    <thead>
+                        <tr>
+                            <th style="width: 200px;">کد</th>
+                            <th>نام کتاب</th>
+                            <th style="width:200px;">عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody id="result-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/main.js"></script>
+</body>
+
+</html>
